@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&display=swap');
+:root{
+    --primary: #0B0C10;
+    --secondary: #fad326;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:15vh auto 0 auto;
+
+}
+
+.Team-top{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.Team-top a{
+    color: white;
+}
+
+.team-items{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    max-height: 300px;
+    
+}
+
+div.team-items *{
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    position: relative;
+}
+
+.team-grid{
+    width: 100%;
+}
+
+
+.team-items .item-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.team-items .item-text{
+    padding-left: 1rem;
+    width: 60%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 70%;
+    left: 3%;
+    
+}
+
+.team-items .item-text:nth-child(2){
+    width: 80%;
+}
+
+.team-items .item-text span{
+    font-size: 12px;
+}
+
+.team-items .item-icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    left: 70%;
+    
+}
+
+
+.team-items .item-icons li{
+    width: 20px;
+    height: 20px; 
+}
+
+.team-items .item-icons a{
+    color: white;
+    
+}
+
+@media(max-width:768px){
+    .team-items{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .team-items .team-item5{
+        display: none;
+    }
+
+    .team-items .item-icons{
+        
+        top: 1%;
+        left: 80%;
+        
+    }
+}
+
+@media(max-width:524px){
+    .container{
+        
+        width: 100%;
+       
+    
+    }
+
+    .Team-top{
+        width: 100%;
+        
+    }
+
+    .team-items{
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    div.team-items *{
+        margin: 0.2rem 0;
+        position: relative;
+    }
+
+    .team-items .item-icons{
+        
+        top: 1%;
+        left: 90%;
+        
+    }
+
+    .team-items .item-icons li{
+        width: 30px;
+        height: 30px; 
+    }
+    
+
+}

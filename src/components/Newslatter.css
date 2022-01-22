@@ -1,0 +1,47 @@
+
+/* NEWSLETTER REGISTRATION */
+  
+.newsletter-registration{
+    --backImage:url("../images/slider_background.png");
+    margin: 2vh 5vh;
+    height: 20vh;
+    width: 95%;
+    background: var(--backImage) no-repeat bottom/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+  
+  }
+  
+  .newsletter-registration h4,h6{
+    font-weight: normal;
+  }
+  
+  .newsletter-registration .input input{
+    background-color:transparent;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid white;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .newsletter-registration .input input:focus{
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .newsletter-registration .input button{
+    padding: 0.5rem 1rem;
+    background: var(--secondary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+@media(max-width:768px){
+  .newsletter-registration{
+    width: 100%;
+    margin: 2vh 0;
+  }
+}

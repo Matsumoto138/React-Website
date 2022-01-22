@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&display=swap');
+:root{
+    --primary: #0B0C10;
+    --secondary: #fad326;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.header{
+    margin: 0 10vh;
+    width: 90%;
+}
+
+/* LANG TAPE */
+
+.header .lang-tape{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 0.7rem 1.5rem;
+    font-size: 14px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+  
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.lang-list ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lang-list ul li{
+    padding: 0 0.2rem;
+}
+
+.lang-list ul li:nth-child(2){
+    border-right: 1px solid rgba(128, 128, 128, 0.541);
+}
+
+.lang-list ul li:nth-child(3){
+    border-right: 1px solid rgba(128, 128, 128, 0.541);
+}
+
+/* MENU */
+
+.menu{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    color: white;
+    height: 12vh;
+    align-content: center;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+
+.menu .navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu .navbar ul li a{
+    color: white;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-icons ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.social-icons ul li a{
+    color: white;
+}
+.open-slide a{
+  color: white;
+}
+
+.menu .open-slide button{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border:none;
+  background: transparent;
+  color: white;
+}
+
+/* SIDE MENU */
+
+.side-nav{
+  height: 100vh;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  
+}
+
+.side-nav a{
+  color: white;
+}
+
+.sidebar-close-btn{
+  margin: 10px 0 10px 90%;
+  color: white;
+}
+
+#sidebar-search{
+  padding: 5px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.side-nav #sidebar-lang{
+  display: flex;
+}
+
+.side-nav #sidebar-lang li{
+  padding: 0px 4px;
+
+}
+
+.side-nav #sidebar-lang li:nth-child(2){
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#sidebar-icons{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+@media(max-width:768px){
+  .header{
+    margin: 0 ;
+    width: 100%;
+}
+
+    .navbar,.social-icons{
+      display: none;
+    }
+  
+    .open-slide{
+      display: block;
+    }
+
+    .menu{
+      grid-template-columns: 50% 50%;
+      
+    }
+
+    .menu .logo{
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu .open-slide button{
+      position: absolute;
+      left: 70%;
+    }
+
+   
+
+    
+  }
+  
+  @media(min-width:769px){
+    .open-slide{
+      display: none;
+    }
+    
+  }
