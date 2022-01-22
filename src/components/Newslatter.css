@@ -3,9 +3,10 @@
   
 .newsletter-registration{
     --backImage:url("../images/slider_background.png");
-    margin: 2vh 5vh;
+    margin: 1rem auto;
     height: 20vh;
-    width: 95%;
+    max-height: 200px;
+    width: 90%;
     background: var(--backImage) no-repeat bottom/cover;
     display: flex;
     flex-direction: column;
@@ -39,7 +40,7 @@
     cursor: pointer;
   }
   
-@media(max-width:768px){
+@media(max-width:800px){
   .newsletter-registration{
     width: 100%;
     margin: 2vh 0;

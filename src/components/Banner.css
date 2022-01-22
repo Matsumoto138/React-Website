@@ -4,6 +4,7 @@
     background: linear-gradient(90deg, rgba(36,35,35,0.8) 0% ,rgba(255,255,255,0) 100% ), var(--image) center/cover;
     margin: 2vh 5vh;
     height: 80vh;
+    max-height: 800px;
     border-style: solid;
     border-width: 2px;
     border-image-source: url("../images/banner_image.jpg");
@@ -11,17 +12,18 @@
     display: grid;
     grid-template-columns: 8fr 12fr;
     align-content: center;
-    ;
+    
   }
 
 .banner-image-items{
-  max-height: 80vh;
-    margin: 3rem;
+  
+  max-height: 800px;
+  margin: 3rem;
     color: white;
   }
   
   .banner-image-items .banner-image-text h1{
-    font-size: 64px;
+    font-size: 3rem;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
     line-height: 78px;
@@ -30,7 +32,7 @@
   .banner-image-items .banner-image-text h2{
     margin-bottom: 1rem;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 1.5rem;
     line-height: 34px;
   }
   
@@ -58,7 +60,8 @@
   
   .banner-image-extra-items #extra-items{
     
-    height: 50vh;
+    
+    
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     justify-content: center;
@@ -71,6 +74,7 @@
     
     
    height: 30vh;
+   max-height: 300px;
     background:rgba(199, 199, 199, 0.349);
   }
 
@@ -129,15 +133,43 @@
     flex-direction: column;
   }
   
+  @media(max-width:800px){
+    .banner-image-extra-items #extra-items .item-1{
+      height: 20vh;
+    }
+
+    .banner-image-extra-items #extra-items .item-1 .item1-content{
+      padding: 1rem 0.2rem 0 0.2rem;
+    }
+
+    .banner-image-extra-items #extra-items .item-2 .item2-content{
+      padding: 100% 0.5rem 0 0.5rem;
+    }
+
+    .banner-image-extra-items #extra-items .item-3 .item3-content{
+      padding: 100% 0.5rem 0 0.5rem;
+    }
+
+    .banner{
+      margin: 2vh 0;
+      height: 100vh;
+      grid-template-columns: 12fr 12fr;
+    }
+  }
   
   
-  @media(max-width:768px){
-    .banner-image-button, .banner-image-extra-items{
+  @media(max-width:512px){
+    .banner-image-extra-items{
       display: none;
     }
 
     .banner{
       margin: 2vh 0;
       height: 100vh;
+      grid-template-columns: 12fr 12fr;
+    }
+
+    .banner-image-items{
+      margin: 1rem;
     }
   }

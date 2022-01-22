@@ -10,15 +10,18 @@ import Team from './components/Team';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <div className="header">      
-        <Banner></Banner>
-        <Newslatter></Newslatter>
-      </div>
-      <News></News>
-      <Carrier></Carrier>
-      <Team></Team>
-      <Games></Games>
+      
+        <Header></Header>
+        <div className="header">      
+          <Banner></Banner>
+          <Newslatter></Newslatter>
+        </div>
+        <News></News>
+        <Carrier></Carrier>
+        <Team></Team>
+        <Games></Games>
+      
+      
     </div>
   );
 }

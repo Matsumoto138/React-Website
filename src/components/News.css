@@ -6,17 +6,18 @@
 }
 
 .container{
-    margin-top: 10vh;
+    margin-top: 1rem;
     width: 70%;
     display: flex;
     flex-direction: column;
     color: white;
-    margin-bottom: 100px;
+    
 }
 
 .news-top{
     width: 90%;
     display: flex;
+    align-items: center;
 }
 
 
