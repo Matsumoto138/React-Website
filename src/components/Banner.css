@@ -2,6 +2,7 @@
   
     --image: url("../images/banner_image.jpg");
     background: linear-gradient(90deg, rgba(36,35,35,0.8) 0% ,rgba(255,255,255,0) 100% ), var(--image) center/cover;
+    background-attachment: fixed;
     margin: 2vh 5vh;
     height: 80vh;
     max-height: 800px;
@@ -92,14 +93,14 @@
     font-family: "Bebas Neue",cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     
   }
   
   .banner-image-extra-items #extra-items h6{
   font-style: normal;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 0.5rem;
   color: #C2C2C2;
   }
   

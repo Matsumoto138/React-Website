@@ -1,0 +1,71 @@
+:root{
+    --primary: #0B0C10;
+    --secondary: #fad326;
+
+}
+
+.container-club{
+    position: relative;
+    width: 95%;
+    height: 200px ;
+    max-height: 500px;
+    background: url('../images/club_background.png') center/cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+.club-content{
+    width: 50%;
+    padding: 0 6rem;
+}
+
+.club-content .club-text{
+    font-size: 1.5rem;
+    line-height: 24px;
+}
+
+.club-content .club-text span{
+    font-size: 0.75rem;
+}
+
+.club-button button{
+    padding: 0.5rem 1.25rem;
+    color: white;
+    background: var(--secondary);
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+@media (max-width:800px){
+    .container-club{
+        width: 100%;
+        
+    }
+
+    .club-content{
+        width:100%;
+        padding: 0 6rem;
+    }
+}
+
+@media (max-width:512px){
+    .container-club{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .club-content{
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .club-content .club-text{
+        line-height: 20px;
+    }
+}
