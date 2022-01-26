@@ -2,9 +2,9 @@ import './Newslatter.css';
 
 function Newslatter() {
     return(
-        <div class="newsletter-registration">
+        <div className="newsletter-registration">
         <h4>JOIN OUR NEWSLETTER NOW</h4>
-        <div class="input">
+        <div className="input">
             <input type="text" placeholder="Your email address" />
             <button type="button">SIGN UP</button>
             

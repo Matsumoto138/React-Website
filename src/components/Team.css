@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&display=swap');
 :root{
-    --primary: #0B0C10;
+    --primary: #F2FFE9;
     --secondary: #fad326;
+    --dark:#0B0C10;
 
 }
 
@@ -20,9 +21,7 @@
     align-items: center;
 }
 
-.Team-top a{
-    color: white;
-}
+
 
 .team-items{
     display: grid;
@@ -46,21 +45,21 @@ div.team-items *{
     object-fit: cover;
 }
 
-.team-items .item-text{
+.team-items .item-text-white{
     padding-left: 1rem;
     width: 60%;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     top: 70%;
     left: 3%;
-    
+    color: var(--primary);
 }
 
-.team-items .item-text:nth-child(2){
+.team-items .item-text-white:nth-child(2){
     width: 80%;
 }
 
-.team-items .item-text span{
+.team-items .item-text-white span{
     font-size: 12px;
 }
 
@@ -69,7 +68,7 @@ div.team-items *{
     flex-direction: column;
     position: absolute;
     top: 1%;
-    left: 70%;
+    right: -0.5rem;
     
 }
 
@@ -84,7 +83,7 @@ div.team-items *{
     
 }
 
-@media(max-width:768px){
+@media(max-width:800px){
     .team-items{
         grid-template-columns: repeat(2, 50%);
     }
@@ -96,12 +95,12 @@ div.team-items *{
     .team-items .item-icons{
         
         top: 1%;
-        left: 80%;
+        right: 0;
         
     }
 }
 
-@media(max-width:524px){
+@media(max-width:512px){
     .container{
         
         width: 100%;
@@ -126,7 +125,7 @@ div.team-items *{
     .team-items .item-icons{
         
         top: 1%;
-        left: 90%;
+        right: 0;
         
     }
 

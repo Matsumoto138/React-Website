@@ -91,7 +91,7 @@
 }
 
 .footer-social-icons ul{
-    width: 20%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -111,16 +111,26 @@
 }
 
 @media (max-width:512px){
-    /*
+
+    .container-footer{
+        height: auto;
+    }
+    
     .footer-top{
-        height: 200px;
+        height: auto;
+        
         justify-content: center;
+        
+    }
+
+    .footer-links ul li{
+        width: 75px;
     }
 
     .footer-links ul li:nth-child(2), .footer-links ul li:nth-child(4){
         border: none;
     }
-
+/*
     .footer-links ul{
         width: 200px;
         height: 150px;
@@ -155,6 +165,9 @@
     .footer-copyright{
         width: 80%;
         margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .footer-copyright .copyright-text{
@@ -163,6 +176,7 @@
     }
 
     .footer-social-icons{
+        width: 80%;
         display: flex;
         align-items: center;
         margin-top: 2rem;

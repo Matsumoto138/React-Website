@@ -4,6 +4,7 @@ function Banner() {
     return(
 
         <div className="banner">
+            
             <div className="banner-image-items">
                 <div className="banner-image-text">
                     <h1>ALPHA X</h1>

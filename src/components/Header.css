@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&display=swap');
 :root{
-    --primary: #0B0C10;
+    --primary: #F2FFE9;
     --secondary: #fad326;
-
+    --dark:#0B0C10;
 }
 
 *{
@@ -30,6 +30,23 @@
     padding: 0.7rem 1.5rem;
     font-size: 14px;
 }
+
+.mode-toggle{
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.mode-toggle p{
+  margin: auto;
+}
+
+.switch{
+  margin: auto;
+}
+
 
 .switch {
     position: relative;
@@ -103,6 +120,10 @@
     padding: 0 0.2rem;
 }
 
+.lang-list ul li a{
+  color: var(--dark);
+}
+
 .lang-list ul li:nth-child(2){
     border-right: 1px solid rgba(128, 128, 128, 0.541);
 }
@@ -116,24 +137,21 @@
 .menu{
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    color: white;
-    height: 12vh;
+    height: 75px;
     align-content: center;
+    justify-content: center;
     border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-
-.menu .navbar ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
+.menu .logo{
+  width: 30px;
+  height: 40px;
+  margin-left: 1rem;
 }
 
-.menu .navbar ul li a{
-    color: white;
-}
+
+
+
 
 .social-icons{
     display: flex;
@@ -149,11 +167,30 @@
 }
 
 .social-icons ul li a{
-    color: white;
+    color: var(--dark);
+    
 }
-.open-slide a{
-  color: white;
+
+.social-icons ul li a i{
+  transition: 0.2s all ease-in-out;
 }
+
+.social-icons ul li:hover .fa-facebook-f{
+    color: #3b5998;
+}
+
+.social-icons ul li:hover .fa-twitter{
+    color: #1da1f2;
+}
+
+.social-icons ul li:hover .fa-linkedin-in{
+    color: #0a66c2;
+}
+
+.social-icons ul li:hover .fa-instagram{
+  color: #c32aa3;
+}
+
 
 .menu .open-slide button{
   width: 30px;
@@ -161,7 +198,7 @@
   cursor: pointer;
   border:none;
   background: transparent;
-  color: white;
+  color: var(--dark);
 }
 
 /* SIDE MENU */
@@ -202,34 +239,40 @@
 }
 
 .side-nav #sidebar-lang{
+  width: 50%;
+ 
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .side-nav #sidebar-lang li{
-  padding: 0px 4px;
+  /* width: 30px; */
+  text-align: center;
 
 }
 
 .side-nav #sidebar-lang li:nth-child(2){
-  border-right: 1px solid white;
-  border-left: 1px solid white;
+  /* border-right: 1px solid white;
+  border-left: 1px solid white; */
 }
 
 #sidebar-icons{
-  width: 30%;
+  
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 
 }
 
-@media(max-width:800px){
+@media(max-width:1000px){
   .header{
     margin: 0 ;
     width: 100%;
 }
 
-    .navbar,.social-icons{
+    .social-icons{
       display: none;
     }
   
@@ -245,15 +288,24 @@
     .menu .logo{
       display: flex;
       justify-content: center;
+      left: 2rem;
     }
 
     .menu .open-slide button{
       position: absolute;
-      left: 70%;
+      right: 3rem;
     }
 
     #sidebar-search{
       width: 60%;
+    }
+
+    #sidebar-icons{
+      width: 40%;
+    }
+
+    #sidebar-lang{
+      padding: 0;
     }
 
     
@@ -264,10 +316,14 @@
       margin: 0 ;
       width: 100%;
   }
+
   
-      .navbar,.social-icons{
+  
+      .social-icons, .tape-message{
         display: none;
       }
+
+     
     
       .open-slide{
         display: block;
@@ -276,21 +332,48 @@
       .menu{
         grid-template-columns: 50% 50%;
         
+        justify-content: center;
       }
   
       .menu .logo{
         display: flex;
         justify-content: center;
+        left: 1rem;
+      }
+
+      .menu .open-slide{
+        display: flex;
+        align-items: center;
+        
       }
   
       .menu .open-slide button{
         position: absolute;
-        left: 70%;
+        
+      }
+
+     
+      .lang-list{
+        width: 100%;
+      }
+      .lang-list ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+      }
+
+      .lang-list ul li:nth-child(1){
+        margin-right: 2rem;
+      }
+
+      #sidebar-icons{
+        width: 60%;
       }
   
   }
   
-  @media(min-width:769px){
+  @media(min-width:800px){
     .open-slide{
       display: none;
     }
